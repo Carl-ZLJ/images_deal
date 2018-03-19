@@ -25,7 +25,7 @@ def cut_image(file_path, m, n):
     item_width = int(width / n)
     item_height = int(height / m)
     box_list = []
-    # crop 参数 (left, upper, right, lower)
+    # crop 参数 起点横坐标，纵坐标 终点横坐标，纵坐标
     for i in range(0, m):
         for j in range(0, n):
             box = (j*item_width, i*item_height, (j+1)*item_width, (i+1)*item_height)
